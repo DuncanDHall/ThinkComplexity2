@@ -116,12 +116,13 @@ class Cell1DViewer:
         """
         a = self.ca.get_array(start, end)
         n, m = a.shape
-        plt.axis([0, m, 0, n])
-        plt.xticks([])
-        plt.yticks([])
+        #  plt.axis([0, m, 0, n])
+        #  plt.xticks([])
+        #  plt.yticks([])
 
         self.options['extent'] = [0, m, 0, n]
-        plt.imshow(a, cmap=self.cmap, **self.options)
+        #  plt.imshow(a, cmap=self.cmap, **self.options)
+        plt.matshow(a, cmap=self.cmap)
 
 
 def print_table(table):
