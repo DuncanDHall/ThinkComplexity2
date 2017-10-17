@@ -121,8 +121,8 @@ class Cell1DViewer:
         #  plt.yticks([])
 
         self.options['extent'] = [0, m, 0, n]
-        #  plt.imshow(a, cmap=self.cmap, **self.options)
-        plt.matshow(a, cmap=self.cmap)
+        plt.imshow(a, cmap=self.cmap, **self.options)
+        #  plt.matshow(a, cmap=self.cmap)
 
 
 def print_table(table):
